@@ -10,3 +10,15 @@ def import_data(delimited_file):
     return all_data
 
 print import_data(my_file)
+
+
+def seperate_headings_from_data(data):
+    headings = data[0]
+    data.pop(0)
+    print headings
+    print "\n#-----------------------------------#\n"
+    print data
+
+data = import_data(my_file)
+seperate_headings_from_data(data)
+
